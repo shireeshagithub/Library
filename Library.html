@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navigation Bar</title>
+    <style>
+        ul{
+            list-style-type: none;
+            margin: 10px;
+            padding: 10px 20px;
+            overflow: hidden;
+            font-size: xx-large;
+            background-color: burlywood;
+        }
+        li{
+            float: left;
+        }
+        li a{
+            display: block;
+            color:blueviolet;
+            padding: 10px 15px;
+            text-decoration: underline;
+        }
+        li a:hover{
+            background-color:bisque;
+        }
+        #search{
+            height: 40px;
+            width: 210px;
+            margin-top: 16px;
+            margin-right: 30px;
+            text-align: center;
+            border-radius: 10px;
+
+        } 
+        .container {
+            max-width: 4000px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        h1 {
+            font-size: 24px;
+            color: #333;
+            margin-bottom: 20px;
+        }
+        .book {
+            display: flex;
+            align-items: center;
+            margin-bottom: 20px;
+        } 
+        .book img {
+            width: 500px;
+            height: 700px;
+            margin-right: 20px;
+        }
+        .book-title {
+            font-weight: bold;
+            font-size: 45px;
+            color: #333;
+            margin-bottom: 5px;
+        }
+        .book-description {
+            font-size: 40px;
+            color: #333;
+        }
+        .button{
+            background-color:#333;
+            color: white;
+            border: none;
+            font-size: larger;
+            padding: 20px 15px;
+            border-radius: 10px;
+        }
+        #new{
+            color: blue;
+            font-size: 30px;
+            font-weight: bold;
+        }  
+    </style>
+</head>
+<body>
+    <ul>
+        <li><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTZHZKvT9RpPzuGKcy7F_rh6nm9xUwYwXaOjOrvXWxxmTkWXC_Z" width="120px" height="100px"></li>
+        <li><a href="home.html">Home</a></li>
+        <li><a href="New arrivals.html">New Arrivals</a></li>
+        <li><a href="My orders.html">My Orders</a></li>
+        <li><a href="Categories.html">Categories</a></li>
+        <li><a href="Wishlist.html">Wishlist</a></li>
+        <li><a href="logout.html">logout</a></li>
+        <li><b><input type="search" id="search" placeholder="Search Here"></li></b>
+        <li><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS4bxxEwZ5jcp_hoFF6lQbDNrRsN3dsgxCbOqYq52TMNJIDrOrU" width="120px" height="100px"></li>
+    </ul>
+    <em><marquee id="new">New Offers</marquee><br><br></em>
+    <div class="container"> 
+      <div class="book">
+        <img src="https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcT1MuUMWXj1YnYqPx53irBSxze44t5faZxLKKi20W9s4lco7fdK" alt="Book 1">
+        <div>
+          <h1 class="book-title">Your Experience Matters The Most</h1>
+          <p class="book-description">Special  20% Off</p>
+          <p class="book-description">Upto $8 On Your Next Order</p><br>
+          <button class="button">Go to Home</button>
+        </div>
+      </div>
+    </div> 
+</body>
+</html>
